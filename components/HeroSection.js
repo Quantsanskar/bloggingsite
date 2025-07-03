@@ -66,8 +66,8 @@ export default function HeroSection() {
     "/images/image1.png",
     "/images/image2.png",
     "/images/image3.png",
-    
-    
+
+
   ]
 
   return (
@@ -89,9 +89,12 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-8"
           >
-            <span className="inline-block bg-blue-600/20 border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            {/* <span className="inline-block bg-blue-600/20 border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
               Welcome to DevBlog
-            </span>
+            </span> */}
+            {/* <span className="inline-block text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
+
+            </span> */}
           </motion.div>
 
           <motion.h1
@@ -100,18 +103,18 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
           >
-            <span className="text-white">Code Your</span>
+            <div className="-mb-16"><span className="text-white text-center">Hi, <span className="text-blue-600">this is</span></span></div>
+
+
+            <span className="gradient-text"></span>
             <br />
-            <span className="gradient-text">Digital Future</span>
-            <br />
-            <span className="text-white">One</span>{" "}
-            <span className="relative ml-32 mr-32">
-              <span className="bg-blue-600 text-white px-4 py-2 rounded-lg">Article</span>
+            <span className="relative">
+              <span className="bg-gray-800 text-gray-100 px-4 py-2 rounded-lg">Chandan</span>
             </span>{" "}
-            <span className="text-white">at</span>
-            <br/>
-            <span className="text-white text-center lg:ml-12">a time</span>{""}
-        
+            <span className="text-white">Kumar</span>
+            <br />
+            {/* <span className="text-white text-center">Developer(by profession)</span>{""} */}
+
           </motion.h1>
 
           <motion.p
@@ -120,9 +123,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
           >
-            Dive deep into modern web development with comprehensive guides, cutting-edge techniques, and insights that
-            will transform your coding journey. From React mastery to performance optimization, discover the knowledge
-            that shapes tomorrow's developers.
+            I’m a passionate Full Stack Developer & Creative Designer with 7 years’ experience helping startups grow through smart websites, marketing, ads, and design.
           </motion.p>
 
           <motion.div
@@ -131,8 +132,8 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25">
-              Start Reading →
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 -mt-4">
+              Know More About Me →
             </button>
             {/* <button className="border border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-gray-800/50">
               Browse Topics
@@ -143,30 +144,26 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto"
+            className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-3xl mx-auto"
           >
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">50+</div>
-              <div className="text-gray-400 text-sm">In-depth Articles</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">7+</div>
+              <div className="text-gray-400 text-sm">Year of Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">25K+</div>
-              <div className="text-gray-400 text-sm">Monthly Readers</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">96+</div>
+              <div className="text-gray-400 text-sm">Projects Completed</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">15+</div>
-              <div className="text-gray-400 text-sm">Tech Topics</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">100%</div>
-              <div className="text-gray-400 text-sm">Practical Content</div>
+            <div className="text-center sm:col-span-2 lg:col-span-1">
+              <div className="text-3xl font-bold text-blue-400 mb-2">72+</div>
+              <div className="text-gray-400 text-sm">Happy Clients</div>
             </div>
           </motion.div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.2 }}
@@ -186,7 +183,7 @@ export default function HeroSection() {
             />
           </div>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </div>
   )
 }

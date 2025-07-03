@@ -63,7 +63,7 @@ export default function Timeline() {
             {/* Content */}
             <div className={`flex ${item.side === "left" ? "justify-start pr-1/2" : "justify-end pl-1/2"}`}>
               <div className={`w-5/12 ${item.side === "left" ? "pr-8" : "pl-8"}`}>
-                <div className="bg-gray-900 border border-gray-700 rounded-xl p-6 card-hover">
+                <div className="bg-gray-900 border border-gray-700 rounded-xl p-6 ard-hover">
                   <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                   <p className="text-gray-400 mb-4 leading-relaxed">{item.description}</p>
                   <p className="text-sm text-gray-500 leading-relaxed">{item.details}</p>

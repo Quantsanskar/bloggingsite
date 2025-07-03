@@ -5,21 +5,27 @@ import BlogGrid from "@/components/BlockGrid"
 import FeaturedPost from "@/components/FeaturedPost"
 import BlogTimeline from "@/components/BlogTimeline"
 import AuthorExperience from "@/components/AuthorExperience"
-import FeaturedBlogsSection from "@/components/FeaturedBlogsTimeline"
-
+// import FeaturedBlogsSection from "@/components/FeaturedBlogsTimeline"
+import AnimatedCoolText from "@/components/AnimatedCoolText"
+import FeaturedBlogsSection from "@/components/newblogssec"
+import DynamicMarque from "@/components/DynamicMarque"
 export default function Home() {
   return (
     <>
       <main>
         {/* Hero Section with 3D Marquee */}
         <HeroSection />
+        {/* <div className="mt-6"><DynamicMarque/></div> */}
+      
 
         {/* Blog Banner with 3D Card */}
         {/* <BlogBanner /> */}
         <AuthorExperience />
 
+        <AnimatedCoolText />
+
         <div className="max-w-6xl mx-auto px-8 py-12">
-          
+
 
           {/* <FeaturedPost /> */}
 
@@ -50,7 +56,10 @@ export default function Home() {
           <div className="mt-20">
             <BlogTimeline />
           </div> */}
+<div className="-mt-28">
             <FeaturedBlogsSection />
+</div>
+          
         </div>
       </main>
     </>

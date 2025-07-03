@@ -1,6 +1,7 @@
 "use client"
 
-import { CardContainer, CardBody, CardItem } from "@/components/ThreeDCard"
+// import { CardContainer, CardBody, CardItem } from "@/components/ThreeDCard"
+import { CardContainer, CardBody, CardItem } from "@/components/new3dcard"
 
 export default function AuthorExperience() {
     const experiences = [
@@ -45,15 +46,15 @@ export default function AuthorExperience() {
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
                     {/* Right Side - 3D Floating Card with Only Author Image */}
-                    <div className="flex justify-center lg:justify-end">
-                        <CardContainer className="inter-var" containerClassName="py-10">
+                    <div className="flex justify-center">
+                        <CardContainer className="inter-var lg:ml-[6rem] 2xl:ml-[0rem]" containerClassName="py-10">
                             <CardBody className="w-[45rem] sm:w-[35rem] h-[55rem]">
-                                <CardItem translateZ="100" className="w-full">
+                                <CardItem translateZ="100" className="lg:w-[30rem] 2xl:w-[35rem]">
                                     <div className="relative group">
                                         <img
-                                            src="/images/PR.png"
+                                            src="/images/image.png"
                                             height="500"
                                             width="400"
                                             className="h-[500px] w-full object-cover rounded-2xl shadow-2xl group-hover:shadow-3xl transition-all duration-300"
@@ -87,7 +88,7 @@ export default function AuthorExperience() {
                         </div>
 
                         <div className="space-y-6">
-                            <h4 className="text-2xl font-bold text-white">Professional Experience</h4>
+                            <h4 className="text-2xl font-bold text-center text-white">Professional Experience</h4>
                             <div className="space-y-6">
                                 {experiences.map((exp, index) => (
                                     <div key={index} className="relative pl-8 border-l-2 border-blue-500/30">
@@ -113,7 +114,7 @@ export default function AuthorExperience() {
                         </div>
 
                         <div className="space-y-6">
-                            <h4 className="text-2xl font-bold text-white">Core Expertise</h4>
+                            <h4 className="text-2xl font-bold text-center text-white">Core Expertise</h4>
                             <div className="grid sm:grid-cols-2 gap-4">
                                 <div className="flex items-start gap-3">
                                     <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -157,7 +158,7 @@ export default function AuthorExperience() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25">
                                 View My Work
                             </button>

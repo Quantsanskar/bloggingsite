@@ -106,7 +106,7 @@ const BlogCard = ({ blog, isEven, onHover }) => {
       className="relative group cursor-pointer"
     >
       {/* Glow Effect */}
-      <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-cyan-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      {/* <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-cyan-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" /> */}
 
       {/* Main Card */}
       <div className="relative bg-gray-900/20 backdrop-blur-xl border border-gray-700/50 rounded-2xl overflow-hidden">
@@ -310,24 +310,22 @@ export default function FeaturedBlogsSection() {
   return (
     <div className="py-20 px-8">
       <div className="max-w-7xl mx-auto">
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          {/* <span className="bg-blue-600/20 border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-6 inline-block">
+          <span className="bg-blue-600/20 border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-6 inline-block">
             ✨ Featured Content
-          </span> */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="gradient-text">Featured Blogs</span>
-          </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          </span>
+          
+           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Journey through our most impactful articles that have shaped the developer community and pushed the
             boundaries of modern web development.
-          </p>
-        </motion.div>
+          </p> 
+        </motion.div> */}
 
         <FeaturedBlogsTimeline blogs={featuredBlogs} />
       </div>

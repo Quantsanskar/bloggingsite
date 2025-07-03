@@ -59,27 +59,7 @@ const Boat = () => (
       },
     }}
   >
-    <div className="w-8 sm:w-12 md:w-16 h-3 sm:h-4 md:h-6 bg-gray-700 rounded-b-xl relative">
-      <div className="absolute inset-0 bg-blue-500/20 rounded-b-xl" />
-
-      {/* Human figure */}
-      <div className="absolute -top-10 left-1/2 -translate-x-1/2">
-        {/* Head */}
-        <div className="w-4 h-4 bg-white rounded-full shadow-[0_0_5px_rgba(59,130,246,0.5)] mx-auto border-[1.5px] border-blue-400" />
-        {/* Body */}
-        <div className="w-1 h-6 bg-white mx-auto shadow-[0_0_5px_rgba(59,130,246,0.5)] border-[1.5px] border-blue-400" />
-        {/* Arms */}
-        <div className="flex -mt-4 justify-center">
-          <div className="w-4 h-1 bg-white rotate-[-30deg] origin-right shadow-[0_0_5px_rgba(59,130,246,0.5)] border-[1.5px] border-blue-400" />
-          <div className="w-4 h-1 bg-white rotate-[30deg] origin-left shadow-[0_0_5px_rgba(59,130,246,0.5)] border-[1.5px] border-blue-400" />
-        </div>
-        {/* Legs */}
-        <div className="flex -mt-1 justify-center gap-0.5">
-          <div className="w-1 h-3 bg-white rotate-[-15deg] origin-top shadow-[0_0_5px_rgba(59,130,246,0.5)] border-[1.5px] border-blue-400" />
-          <div className="w-1 h-3 bg-white rotate-[15deg] origin-top shadow-[0_0_5px_rgba(59,130,246,0.5)] border-[1.5px] border-blue-400" />
-        </div>
-      </div>
-    </div>
+    
   </motion.div>
 )
 

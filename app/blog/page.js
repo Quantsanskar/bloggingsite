@@ -6,7 +6,7 @@ import BlogsHeader from "@/components/blog/BlogsHeader"
 import BlogStats from "@/components/blog/BlogStats"
 import { HoverEffect } from "@/components/blog/HoverEffect"
 import { motion } from "framer-motion"
-
+import MyBlogsHeader from "@/components/blog/MyBlogHeader"
 export default function BlogsPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [activeCategory, setActiveCategory] = useState("all")
@@ -188,7 +188,7 @@ export default function BlogsPage() {
         <div className="max-w-7xl mx-auto px-8 py-12">
           {/* Header Section */}
           {/* <BlogsHeader onSearch={setSearchTerm} onCategoryChange={setActiveCategory} onSortChange={setActiveSort} /> */}
-
+            <MyBlogsHeader/>
           {/* Stats Section */}
           {/* <BlogStats /> */}
 

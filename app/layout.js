@@ -1,10 +1,17 @@
 import "./globals.css"
-import { Manrope } from 'next/font/google'
+import { Manrope, Roboto } from 'next/font/google'
 
 const manrope = Manrope({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-manrope',
+})
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto',
+  weight: ['400', '500', '700'],
 })
 
 export const metadata = {
@@ -14,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={manrope.variable}>
+    <html lang="en" className={`${manrope.variable} ${roboto.variable}`}>
       <body className="bg-black text-white font-sans antialiased">{children}</body>
     </html>
   )

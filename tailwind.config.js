@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-manrope)'],
+        roboto: ['var(--font-roboto)'],
       },
     },
   },

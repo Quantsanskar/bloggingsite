@@ -534,6 +534,7 @@ export default function FeaturedBlogsSection() {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                         className="text-center mt-4 md:mt-6 cursor-pointer"
+                        onClick={() => window.location.href = "/blog"}
                     >
                         <WaterFillButton />
                     </motion.div>

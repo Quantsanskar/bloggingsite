@@ -100,7 +100,7 @@ const AnimatedCoolText = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4">
             <span className="gradient-text">My Featured Blogs</span>
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-300 font-medium">SO, here it goes...</p>
+          {/* <p className="text-xl sm:text-2xl text-gray-300 font-medium">SO, here it goes...</p> */}
         </motion.div>
 
         {/* Boat with adjusted sizes */}

@@ -1,3 +1,4 @@
+"use client"
 // import Sidebar from "./components/Sidebar"
 import HeroSection from "@/components/HeroSection"
 import BlogBanner from "@/components/BlogBanner"
@@ -9,9 +10,11 @@ import AuthorExperience from "@/components/AuthorExperience"
 import AnimatedCoolText from "@/components/AnimatedCoolText"
 import FeaturedBlogsSection from "@/components/newblogssec"
 import DynamicMarque from "@/components/DynamicMarque"
+import Navigation from "@/components/Navigation"
 export default function Home() {
   return (
     <>
+    <Navigation />
       <main>
         {/* Hero Section with 3D Marquee */}
         <HeroSection />
@@ -22,7 +25,7 @@ export default function Home() {
         {/* <BlogBanner /> */}
         <AuthorExperience />
 
-        <AnimatedCoolText />
+        {/* <AnimatedCoolText /> */}
 
         <div className="max-w-6xl mx-auto px-8 py-12">
 

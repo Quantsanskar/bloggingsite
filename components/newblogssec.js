@@ -522,7 +522,24 @@ export default function FeaturedBlogsSection() {
         <div className="min-h-screen">
             <div className="py-12 md:py-20 px-0 md:px-8">
                 <div className="max-w-7xl mx-auto">
-
+<motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-20"
+        >
+          <span className="bg-blue-600/20 border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-6 inline-block">
+            ✨ Featured Content
+          </span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <span className="gradient-text">Timeline of Excellence</span>
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Journey through our most impactful articles that have shaped the developer community and pushed the
+            boundaries of modern web development.
+          </p>
+        </motion.div>
 
 
                     <FeaturedBlogsTimeline blogs={featuredBlogs} />

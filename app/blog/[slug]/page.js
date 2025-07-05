@@ -2,9 +2,9 @@ import Sidebar from "@/components/Sidebar"
 
 export default function BlogPost({ params }) {
   return (
-    <div className="min-h-screen flex">
-      <Sidebar />
-      <main className="flex-1 ml-64">
+    <div>
+      {/* <Sidebar /> */}
+      <main className="font-manrope">
         <article className="max-w-4xl mx-auto px-8 py-12">
           <div className="mb-8">
             <div className="flex flex-wrap gap-2 mb-4">

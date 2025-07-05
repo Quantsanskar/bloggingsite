@@ -6,6 +6,8 @@ import BlogsHeader from "@/components/blog/BlogsHeader"
 import BlogStats from "@/components/blog/BlogStats"
 import { HoverEffect } from "@/components/blog/HoverEffect"
 import { motion } from "framer-motion"
+import BlogVaultHeader from "@/components/BlogVaultHeader"
+import Navigation from "@/components/Navigation"
 import MyBlogsHeader from "@/components/blog/MyBlogHeader"
 export default function BlogsPage() {
   const [searchTerm, setSearchTerm] = useState("")
@@ -182,13 +184,17 @@ export default function BlogsPage() {
   }, [searchTerm, activeCategory, activeSort])
 
   return (
+    <>
+    <Navigation/>
     <div className="min-h-screen flex">
       
       <main>
         <div className="max-w-7xl mx-auto px-8 py-12">
           {/* Header Section */}
           {/* <BlogsHeader onSearch={setSearchTerm} onCategoryChange={setActiveCategory} onSortChange={setActiveSort} /> */}
-            <MyBlogsHeader/>
+            {/* <MyBlogsHeader/> */}
+            {/* <BlogsHeader/> */}
+            <BlogVaultHeader/>
           {/* Stats Section */}
           {/* <BlogStats /> */}
 
@@ -237,5 +243,6 @@ export default function BlogsPage() {
         </div>
       </main>
     </div>
+    </>
   )
 }

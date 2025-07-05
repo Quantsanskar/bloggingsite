@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ThreeDMarquee } from "./ThreeDMarquee"
-
+import PointerHighlight from "./PointerHighlight"
 export default function HeroSection() {
   // Blog post preview images - you can replace these with actual blog post screenshots
   const blogImages = [
@@ -109,7 +109,14 @@ export default function HeroSection() {
             <span className="gradient-text"></span>
             <br />
             <span className="relative">
-              <span className="bg-gray-800 text-gray-100 px-4 py-2 rounded-lg">Chandan</span>
+              <PointerHighlight
+                rectangleClassName="bg-blue-100 dark:bg-blue-900 border-blue-300 dark:border-blue-700 leading-loose"
+                pointerClassName="text-blue-500 h-3 w-3"
+                containerClassName="inline-block mx-1"
+              >
+                <span className="relative z-10">Chandan</span>
+              </PointerHighlight>
+              {/* <span className="bg-gray-800 text-gray-100 px-4 py-2 rounded-lg">Chandan</span> */}
             </span>{" "}
             <span className="text-white">Kumar</span>
             <br />
@@ -132,9 +139,13 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 -mt-4 font-roboto">
+            <button
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 -mt-4 font-roboto"
+              onClick={() => window.scrollTo({ top: 650, behavior: 'smooth' })}
+            >
               Know More About Me →
             </button>
+
             {/* <button className="border border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-gray-800/50">
               Browse Topics
             </button> */}
